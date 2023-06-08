@@ -13,3 +13,17 @@
     margin-top: 14vh;
   }
  }
+
+ h1 {
+  font-family: 'Bebas Neue', cursive;
+ color: yellow; -webkit-text-stroke: 0.05em red;
+ font-weight: bold;
+ font-size: 7vh;
+}
+h2 {
+  color: yellow;
+}
+
+p {
+  color: white;
+}
