@@ -7,3 +7,9 @@
  .nav-item:hover {
   font-size: 2.2em;
 }
+
+@media screen and (max-width:992px) {
+  main {
+    margin-top: 14vh;
+  }
+ }
