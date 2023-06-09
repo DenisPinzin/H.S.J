@@ -1,29 +1,55 @@
- .nav-item {
+/**HEADER**/
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-brand {
+  height: 14vh;
+}
+
+.nav-item {
   font-family: 'Bebas Neue', cursive;
   font-size: 2em;
   transition: all 0.5s;
 }
 
- .nav-item:hover {
+.nav-item:hover {
   font-size: 2.2em;
 }
 
+
+/**MAIN**/
 @media screen and (max-width:992px) {
+
   main {
     margin-top: 14vh;
   }
- }
-
- h1 {
-  font-family: 'Bebas Neue', cursive;
- color: yellow; -webkit-text-stroke: 0.05em red;
- font-weight: bold;
- font-size: 7vh;
 }
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  color: yellow;
+  -webkit-text-stroke: 0.05em red;
+  font-weight: bold;
+  font-size: 7vh;
+}
+
 h2 {
   color: yellow;
 }
 
 p {
   color: white;
+}
+
+.card-img {
+  filter: brightness(65%);
+  height: 66vh;
+}
+
+@media screen and (max-width:992px) {
+
+  main {
+    margin-top: 14vh;
+  }
 }
