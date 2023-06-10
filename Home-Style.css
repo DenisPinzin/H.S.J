@@ -20,7 +20,6 @@
 
 /**MAIN**/
 @media screen and (max-width:992px) {
-
   main {
     margin-top: 14vh;
   }
@@ -42,14 +41,34 @@ p {
   color: white;
 }
 
-.card-img {
-  filter: brightness(65%);
-  height: 66vh;
-}
-
-@media screen and (max-width:992px) {
-
-  main {
-    margin-top: 14vh;
+/**CARD BREAKPOINT**/
+@media screen and (min-width:1200px) {
+  .card-img {
+    filter: brightness(65%);
+    height: 55vh;
   }
 }
+
+@media screen and (max-width:1200px) {
+  .card-img {
+    filter: brightness(65%);
+    height: 61vh;
+  }
+}
+
+  @media screen and (max-width:992px) {
+    .card-img {
+      height: 410px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .card-img {
+      height: 45vh;
+    }
+  }
+
+  /**CAROUSEL**/
+  .carousel-caption {
+    text-shadow: 1px 1px 10px darkblue;
+  }
