@@ -25,7 +25,7 @@
   }
 }
 
-h1 {
+h1{
   font-family: 'Bebas Neue', cursive;
   color: yellow;
   -webkit-text-stroke: 0.05em red;
@@ -72,3 +72,9 @@ p {
   .carousel-caption {
     text-shadow: 1px 1px 10px darkblue;
   }
+
+  /**FOOTER**/
+
+.foot-link:hover {
+  text-decoration: none;
+}
