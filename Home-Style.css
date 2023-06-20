@@ -19,6 +19,10 @@
 
 
 /**MAIN**/
+main {
+  background: sandybrown;
+}
+
 @media screen and (max-width:992px) {
   main {
     margin-top: 14vh;
@@ -30,15 +34,11 @@ h1{
   color: yellow;
   -webkit-text-stroke: 0.05em red;
   font-weight: bold;
-  font-size: 7vh;
+
 }
 
 h2 {
   color: yellow;
-}
-
-p {
-  color: white;
 }
 
 /**CARD BREAKPOINT**/
@@ -78,3 +78,4 @@ p {
 .foot-link:hover {
   text-decoration: none;
 }
+
