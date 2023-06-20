@@ -1,5 +1,5 @@
 /**HEADER**/
-.navbar {
+header {
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -18,15 +18,33 @@
 }
 
 
-/**MAIN**/
-main {
-  background: sandybrown;
+
+
+@media screen and (min-width:992px) {
+  header{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  main {
+    margin-top: 16.9vh;
+  }
 }
 
 @media screen and (max-width:992px) {
+  header {
+    position: absolute;
+    top: 0;
+  }
   main {
     margin-top: 14vh;
   }
+}
+
+
+/**MAIN**/
+main {
+  background: sandybrown;
 }
 
 h1{
@@ -75,7 +93,7 @@ h2 {
 
   /**FOOTER**/
 
-.foot-link:hover {
+.foot-link:hover, aside a:hover {
   text-decoration: none;
 }
 
