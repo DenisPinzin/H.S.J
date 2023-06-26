@@ -1,5 +1,6 @@
 /**HEADER**/
-nav, header>hr {
+header {
+  z-index: 3;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -15,4 +16,35 @@ nav, header>hr {
 
 .nav-item:hover {
   font-size: 2.2em;
+}
+
+
+
+
+@media screen and (min-width:992px) {
+  header{
+    position: fixed;
+    top: 0;
+  }
+}
+
+@media screen and (max-width:992px) {
+  header {
+    position: absolute;
+    top: 0;
+  }
+  main {
+    margin-top: 14vh;
+  }
+}
+
+/**MAIN**/
+
+main video {
+  position: fixed;
+  filter: grayscale(1);
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
