@@ -1,3 +1,13 @@
+/**BODY-BACKGROUND**/
+video {
+  position: fixed;
+  filter: grayscale(1);
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 /**HEADER**/
 header {
   z-index: 3;
@@ -26,6 +36,9 @@ header {
     position: fixed;
     top: 0;
   }
+ main {
+    margin-top: 16.9vh;
+  }
 }
 
 @media screen and (max-width:992px) {
@@ -38,13 +51,90 @@ header {
   }
 }
 
-/**MAIN**/
+/**MAIN-INTRODUCTION**/
 
-main video {
-  position: fixed;
-  filter: grayscale(1);
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+main h1{
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  text-shadow: 0 0 1em yellow, 0 0 0.2em red;
+  font-weight: bold;
+  align-self: center;
 }
+
+@media screen and (max-width:576px) {
+  h1 {
+    font-size: 5vh;
+  }
+  section .p-intro {
+    font-size: 4.55vh;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:576px) {
+  h1 {
+    font-size: 6vh;
+  }
+  section .p-intro {
+    font-size: 5.25vh;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  h1 {
+    font-size: 6vh;
+  }
+  section .p-intro {
+    font-size: 6vh;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:992px) {
+  h1 {
+    font-size: 6vh;
+  }
+  section .p-intro {
+    font-size: 5vh;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  h1 {
+    font-size: 6vh;
+  }
+  section .p-intro {
+    font-size: 5.75vh;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  h1 {
+    font-size: 6vh;
+  }
+  section .p-intro {
+    font-size: 6vh;
+  }
+}
+
+/**MAIN-ARTICLES**/
+
+div.card {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (min-width:992px) {
+  div.card {
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  div.card img {
+    height: 40vh;
+    width: 70vh;
+  }
+}
+
