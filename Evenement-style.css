@@ -122,19 +122,18 @@ main h1{
 /**MAIN-ARTICLES**/
 
 div.card {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 @media screen and (min-width:992px) {
   div.card {
     display: flex;
     flex-direction: row-reverse;
-    background: rgba(255, 255, 255, 0.8);
   }
 
   div.card img {
     height: 40vh;
-    width: 70vh;
+    width: 50vh;
   }
 }
 
