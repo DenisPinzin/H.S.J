@@ -8,6 +8,10 @@ video {
   min-height: 100%;
 }
 
+hr {
+  height: 1vh;
+}
+
 /**HEADER**/
 header {
   z-index: 3;
@@ -28,29 +32,9 @@ header {
   font-size: 2.2em;
 }
 
-@media screen and (min-width:992px) {
-  header{
-    position: fixed;
-    top: 0;
-  }
- main {
-    margin-top: 16.9vh;
-  }
-}
-
-@media screen and (max-width:992px) {
-  header {
-    position: absolute;
-    top: 0;
-  }
-  main {
-    margin-top: 14vh;
-  }
-}
-
 /**MAIN-INTRODUCTION**/
 
-main h1{
+main h1 {
   font-family: 'Bebas Neue', cursive;
   color: white;
   text-shadow: 0 0 1em yellow, 0 0 0.2em red;
@@ -58,10 +42,71 @@ main h1{
   align-self: center;
 }
 
+
+
+/**MAIN-ARTICLES**/
+
+
+
+div.card {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/**ASIDE**/
+
+aside a.btn {
+  position: absolute;
+  bottom: 5%;
+}
+
+aside h4 {
+  text-decoration: underline;
+}
+
+/**FOOTER**/
+
+footer {
+  border-top: 0.5vh solid yellow;
+}
+
+footer h4 {
+  color: yellow; -webkit-text-stroke: 0.05em red;
+}
+
+footer ul {
+  color: sandybrown;
+}
+
+.foot-link:hover,
+aside a:hover {
+  text-decoration: none;
+}
+
+/**BREAKPOINTS**/
+
+@media (max-height:576px) and (orientation:landscape) {
+  main section img {
+    height: 25rem;
+  }
+}
+
+@media (max-width:576px) and (orientation:portrait) {
+  main section img {
+    height: 20rem;
+  }
+}
+
+@media (min-height:576px) and (orientation:landscape) {
+  aside img {
+    height: 30vh;
+  }
+}
+
 @media screen and (max-width:576px) {
   h1 {
     font-size: 5vh;
   }
+
   section .p-intro {
     font-size: 4.75vh;
     text-align: center;
@@ -72,9 +117,14 @@ main h1{
   h1 {
     font-size: 6vh;
   }
+
   section .p-intro {
     font-size: 5.25vh;
     text-align: center;
+  }
+
+  main section img {
+    height: 25rem;
   }
 }
 
@@ -82,19 +132,69 @@ main h1{
   h1 {
     font-size: 6vh;
   }
+
   section .p-intro {
     font-size: 6vh;
     text-align: center;
   }
+
+  aside img {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  aside img {
+    height: 250px;
+  }
 }
 
 @media screen and (min-width:992px) {
+  header {
+    position: fixed;
+    top: 0;
+  }
+
+  main {
+    margin-top: 16.9vh;
+  }
+
   h1 {
     font-size: 6vh;
   }
+
   section .p-intro {
     font-size: 5vh;
     text-align: start;
+  }
+
+  div.card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .ci-main {
+    height: 40vh;
+    width: 50vh;
+  }
+
+  .card-body {
+    font-size: 2.20vh;
+  }
+
+  h5 {
+    font-size: 2.25;
+  }
+}
+
+@media screen and (max-width:992px) {
+  header {
+    position: absolute;
+    top: 0;
+  }
+
+  main {
+    margin-top: 14vh;
   }
 }
 
@@ -102,6 +202,7 @@ main h1{
   h1 {
     font-size: 6vh;
   }
+
   section .p-intro {
     font-size: 5.5vh;
   }
@@ -111,32 +212,8 @@ main h1{
   h1 {
     font-size: 6vh;
   }
+
   section .p-intro {
     font-size: 6vh;
   }
 }
-
-/**MAIN-ARTICLES**/
-
-div.card {
-  background: rgba(255, 255, 255, 0.4);
-}
-
-@media screen and (min-width:992px) {
-  div.card {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  div.card img {
-    height: 40vh;
-    width: 50vh;
-  }
-  .card-body {
-    font-size: 2.20vh;
-  }
-  h5 {
-    font-size: 2.25;
-  }
-}
-
